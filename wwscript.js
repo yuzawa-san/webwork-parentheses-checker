@@ -43,8 +43,8 @@ $(document).ready(function() {
         itemWidth=$(this).outerWidth();
         itemHeight=$(this).outerHeight();
         $("#wwchecker-floater").css({
-            left:offsetStruct.left+itemWidth+10,
-            top:offsetStruct.top
+            left:offsetStruct.left,
+            top:offsetStruct.top+itemHeight+10
         }).show();
         isValid($(this));
     }).blur(function(){
